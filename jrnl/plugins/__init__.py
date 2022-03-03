@@ -12,6 +12,7 @@ from .template_exporter import __all__ as template_exporters
 from .text_exporter import TextExporter
 from .xml_exporter import XMLExporter
 from .yaml_exporter import YAMLExporter
+from .ledger_exporter import LedgerExporter
 
 __exporters = [
     JSONExporter,
@@ -22,6 +23,7 @@ __exporters = [
     XMLExporter,
     YAMLExporter,
     FancyExporter,
+    LedgerExporter,
 ] + template_exporters
 __importers = [JRNLImporter]
 
